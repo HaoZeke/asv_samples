@@ -29,5 +29,6 @@ jobs:
       - name: Build and test
         run: |
           pip install asv virtualenv
+          python scripts/gen_asv_conf.py asv.conf.base.json
           asv machine --yes
           asv run --quick --dry-run
