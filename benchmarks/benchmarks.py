@@ -1,9 +1,12 @@
-from benchme import add_arr
+from asv_samples.benchme import add_arr
+
 
 class TimeSuite:
     """
-    Benchmark that times various operations, including custom summation of lists.
+    Benchmark that times various operations, including custom summation of
+    lists.
     """
+
     def setup(self):
         self.list1 = [i for i in range(500)]
         self.list2 = [i for i in range(500, 1000)]
