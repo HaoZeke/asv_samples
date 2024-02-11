@@ -22,7 +22,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build and test
         run: |
-          pip install -e .
           pip install asv virtualenv
           asv machine --yes
           asv run --quick --dry-run
