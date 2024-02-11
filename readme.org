@@ -1,4 +1,8 @@
 * About
+
+#+attr_html: :alt  :align left :class img
+[[branding/logo/asv_samples_logo.png][ASV Samples Logo]]
+
   This repository repository serves as a comprehensive showcase for integrating
   ASV (Air Speed Velocity) with a wide array of Python project configurations,
   including various build systems and advanced benchmarking features like custom
@@ -49,3 +53,5 @@ section]].
 
 * License
 MIT.
+** Logo
+The logo was generated via prompts for ChatGPT4.
