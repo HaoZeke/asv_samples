@@ -7,7 +7,7 @@
     "environment_type": "virtualenv",
     "matrix": {
         "req": {
-            "numpy": ["", null],
+            "numpy": [""],
         },
     },
     "env_dir": ".asv/env",
