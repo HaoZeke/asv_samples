@@ -1,21 +1,21 @@
+@@markdown:![Logo](./branding/logo/asv_samples_logo.png)@@
+
 * About
-
-[[file:./branding/logo/asv_samples_logo.png][ASV Samples Logo]]
-
-  This repository repository serves as a comprehensive showcase for integrating
-  ASV (Air Speed Velocity) with a wide array of Python project configurations,
-  including various build systems and advanced benchmarking features like custom
-  parameterizations and ASV plugins. This initiative aims to benchmark Python
-  code performance across diverse setups, offering insights into the impacts of
-  different build systems and ASV's extensible features on performance metrics.
-  The repository is structured with dedicated branches for each build system and
-  feature demonstration.
+This repository repository serves as a comprehensive showcase for integrating
+ASV (Air Speed Velocity) with a wide array of Python project configurations,
+including various build systems and advanced benchmarking features like custom
+parameterizations and ASV plugins. This initiative aims to benchmark Python
+code performance across diverse setups, offering insights into the impacts of
+different build systems and ASV's extensible features on performance metrics.
+The repository is structured with dedicated branches for each build system and
+feature demonstration.
 ** Representative Build Systems
 
-| *Branch*                     | *Configuration*                  | *CI Status* |
-| ~main~                       | Source, not to be run            | N/A         |
-| ~setup.py-build~             | Setuptools with ~setup.py~       | [[https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build][Status]]      |
-| ~pyproject-setuptools-build~ | Setuptools with ~pyproject.toml~ | [[https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build][Status]]      |
+| *Branch*                     | *Configuration*                  | *CI Status*                                                                                                                                 |
+|------------------------------+----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------|
+| ~main~                       | Source, not to be run            | N/A                                                                                                                                         |
+| ~setup.py-build~             | Setuptools with ~setup.py~       | @@markdown:![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build)@@             |
+| ~pyproject-setuptools-build~ | Setuptools with ~pyproject.toml~ | @@markdown:![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build)@@ |
 
 Note that in all cases users can always modify the ~build_command~ variable
 within their ~asv~ configuration file.
@@ -31,6 +31,10 @@ Given the exploding number of build systems and varying configurations, this
 repository is necessarily a community effort. We value collaborative efforts
 and encourage the use of co-commits for joint contributions.
 ** General Contributions and Fixes
+The default branch serves as a common staging area (e.g. common benchmarks,
+documentation) for every demonstration branch. Changes which ought to be
+propagated to every other branch should be directed towards ~main~.
+
 For general enhancements or fixes to existing branches:
 - Fork the repository, apply your changes, and submit a pull request.
 - For collaborative work, please include co-commits. Add ~Co-authored-by: name <name@example.com>~ at the end of your commit message for each contributor,
