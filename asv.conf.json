@@ -4,7 +4,7 @@
     "project_url": "http://github.com/HaoZeke/asv_builder_examples",
     "repo": ".",
     "branches": ["main"],
-    "environment_type": "virtualenv",
+    "environment_type": "conda",
     "matrix": {
         "req": {
             "numpy": ["", null],

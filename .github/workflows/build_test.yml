@@ -15,14 +15,20 @@ jobs:
         python-version: ["3.9"]
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+      - uses: conda-incubator/setup-miniconda@v3
         with:
-          python-version: ${{ matrix.python-version }}
-      - uses: actions/checkout@v3
+          activate-environment: bench
+          allow-softlinks: true
+          python-version: ${{ matrix.python }}
+          channels: conda-forge
+          channel-priority: strict
+          miniforge-version: latest
+          use-only-tar-bz2: true
+          use-mamba: true
+      - uses: actions/checkout@v4
       - name: Build and test
         run: |
           pip install -e .
           pip install asv virtualenv
           asv machine --yes
-          asv run
+          asv run --quick --dry-run
