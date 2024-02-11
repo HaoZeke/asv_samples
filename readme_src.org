@@ -24,9 +24,6 @@ within their ~asv~ configuration file.
 ** Advanced Benchmarking Demonstrations
 - Parametrization Techniques :: Showcases how to use decorators for parameterized
   benchmarks, under ~decorator-params~ branch.
-- ASV Plugins :: Demonstrates the use of ASV plugins to extend benchmarking
-  capabilities, found in the ~$PLUGIN_NAME-plugins~ branches.
-  + Currently ~memray-plugin~ showcases the use of ~asv_bench_memray~
 * Contributing
 Given the exploding number of build systems and varying configurations, this
 repository is necessarily a community effort. We value collaborative efforts
