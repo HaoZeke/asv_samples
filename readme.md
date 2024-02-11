@@ -14,14 +14,14 @@ demonstration.
 
 ## Representative Build Systems
 
-| **Branch**                   | **Configuration**                | **CI Status**                                                                                                                  |
-|------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `main`                       | Source, not to be run            | N/A                                                                                                                            |
-| `setup.py-build`             | Setuptools with `setup.py`       | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build)             |
-| `pyproject-setuptools-build` | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build) |
-| `memray-plugin`              | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=memray-plugin)              |
-| `decorator-params`           | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=decorator-params)           |
-| `skip-params`                | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=skip-params)                |
+| **Branch**                   | **Configuration**                | **CI Status**                                                                                                                                                                                                                                       |
+|------------------------------|----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `main`                       | Source, not to be run            | N/A                                                                                                                                                                                                                                                 |
+| `setup.py-build`             | Setuptools with `setup.py`       | [![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build)](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml?query=branch%3Asetup.py-build)                         |
+| `pyproject-setuptools-build` | Setuptools with `pyproject.toml` | [![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build)](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml?query=branch%3Apyproject-setuptools-build) |
+| `memray-plugin`              | Setuptools with `pyproject.toml` | [![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=memray-plugin)](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml?query=branch%3Amemray-plugin)                           |
+| `decorator-params`           | Setuptools with `pyproject.toml` | [![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=decorator-params)](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml?query=branch%3Adecorator-params)                     |
+| `skip-params`                | Setuptools with `pyproject.toml` | [![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=skip-params)](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml?query=branch%3Askip-params)                               |
 
 Note that in all cases users can always modify the `build_command`
 variable within their `asv` configuration file.
