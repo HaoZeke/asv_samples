@@ -8,9 +8,11 @@
     "matrix": {
         "req": {
             "numpy": ["", null],
-        },
+            "pip+asv-bench-memray": [">=0.1.2"],
+            "asv": [">=0.6.2"]
+        }
     },
     "env_dir": ".asv/env",
     "results_dir": ".asv/results",
-    "html_dir": ".asv/html",
+    "html_dir": ".asv/html"
 }

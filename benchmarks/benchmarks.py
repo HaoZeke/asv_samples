@@ -1,18 +1,12 @@
-from asv_samples.benchme import add_arr
+from asv_runner.benchmarks.mark import SkipNotImplemented
 
+class MemrayBenchmarks:
+    params = [10, int(2e4)]
 
-class TimeSuite:
-    """
-    Benchmark that times various operations, including custom summation of
-    lists.
-    """
-
-    def setup(self):
-        self.list1 = [i for i in range(500)]
-        self.list2 = [i for i in range(500, 1000)]
-
-    def time_add_arr(self):
-        """
-        Time the add_arr function with two lists of numbers.
-        """
-        add_arr(self.list1, self.list2)
+    def ray_sum(self, n):
+        try:
+            import numpy as np
+        except ImportError:
+            raise SkipNotImplemented("Can't run without NumPy")
+        self.data = np.random.rand(n)
+        np.sum(self.data)

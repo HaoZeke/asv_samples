@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "hatchling.build"
+requires      = [ "hatch-vcs", "hatchling" ]
+
+[tool.hatch.build.hooks.vcs]
+version-file = "_version.py"
+
+[tool.hatch.build]
+include = [ "asv_samples/**/*.py", "asv_samples/*.py" ]
+
+[project]
+name = "asv_samples"
+version = "0.1.0"
+description = "A set of asv samples"
+authors = [
+    {name = "Rohit Goswami", email = "rgoswami@ieee.org"},
+]
+license = {file = "LICENSE"}
+readme = "readme.md"
+
+[project.urls]
+repository = "https://github.com/HaoZeke/asv_samples"
