@@ -31,10 +31,8 @@ and encourage the use of co-commits for joint contributions.
 ** General Contributions and Fixes
 For general enhancements or fixes to existing branches:
 - Fork the repository, apply your changes, and submit a pull request.
-- For collaborative work, please include co-commits. Add ~Co-authored-by: name
-  <name@example.com>~ at the end of your commit message for each contributor,
-  ensuring the email is linked to their GitHub accounts, or use ~Co-authored-by:
-  username <username@users.noreply.github.com>~.
+- For collaborative work, please include co-commits. Add ~Co-authored-by: name <name@example.com>~ at the end of your commit message for each contributor,
+  ensuring the email is linked to their GitHub accounts, or use ~Co-authored-by: username <username@users.noreply.github.com>~.
 ** Adding a New Build System
 To introduce support for a new build system not currently represented in the
 repository:
@@ -50,6 +48,12 @@ repository:
 Remember to follow the collaborative work guidelines laid out in the [[General Contributions and Fixes][previous
 section]].
 
+** Documentation
+*** Readme
+The ~readme~ can be constructed via:
+#+begin_src bash
+./scripts/org_to_md.sh readme_src.org readme.md
+#+end_src
 * License
 MIT.
 ** Logo
