@@ -4,13 +4,13 @@
   across different setups. Organized by build system, each is represented in its
   dedicated branch.
 ** Representative Build Systems
-- Setuptools :: The ~asv quickstart~ default.
+- Setuptools :: Still a reasonable default.
 - Poetry :: Uses ~poetry-core~ as the build system.
 - PDM :: With the ~pdm-backend~ build system.
 - Hatch :: With ~hatchling~.
 
-Note that in all cases users can always modify the build command within their
-~asv~ configuration file.
+Note that in all cases users can always modify the ~build_command~ variable
+within their ~asv~ configuration file.
 * Contributing
 Given the exploding number of build systems and varying configurations, this
 repository is necessarily a community effort. We value collaborative efforts
