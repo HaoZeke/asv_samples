@@ -1,0 +1,16 @@
+{
+    "version": 1,
+    "project": "asv_samples",
+    "project_url": "http://github.com/HaoZeke/asv_builder_examples",
+    "repo": ".",
+    "branches": ["main"],
+    "environment_type": "virtualenv",
+    "matrix": {
+        "req": {
+            "numpy": ["", null],
+        },
+    },
+    "env_dir": ".asv/env",
+    "results_dir": ".asv/results",
+    "html_dir": ".asv/html",
+}
