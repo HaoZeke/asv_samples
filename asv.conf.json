@@ -3,7 +3,7 @@
     "project": "asv_samples",
     "project_url": "http://github.com/HaoZeke/asv_builder_examples",
     "repo": ".",
-    "branches": ["main"],
+    "branches": ["pyproject-setuptools-build"],
     "environment_type": "conda",
     "matrix": {
         "req": {
