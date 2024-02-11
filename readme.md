@@ -20,21 +20,10 @@ demonstration.
 | `setup.py-build`             | Setuptools with `setup.py`       | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build)             |
 | `pyproject-setuptools-build` | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build) |
 | `memray-plugin`              | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=memray-plugin)              |
+| `decorator-params`           | Setuptools with `pyproject.toml` | ![Status](https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=decorator-params)           |
 
 Note that in all cases users can always modify the `build_command`
 variable within their `asv` configuration file.
-
-## Advanced Benchmarking Demonstrations
-
-Parametrization Techniques  
-Showcases how to use decorators for parameterized benchmarks, under
-`decorator-params` branch.
-
-ASV Plugins  
-Demonstrates the use of ASV plugins to extend benchmarking capabilities,
-found in the `$PLUGIN_NAME-plugins` branches.
-
-- Currently `memray-plugin` showcases the use of `asv_bench_memray`
 
 # Contributing
 
