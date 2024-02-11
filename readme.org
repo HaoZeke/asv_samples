@@ -1,0 +1,41 @@
+* About
+  This repository showcases the integration of ASV (Air Speed Velocity) with
+  various Python build systems, aiming to benchmark Python code performance
+  across different setups. Organized by build system, each is represented in its
+  dedicated branch.
+** Representative Build Systems
+- Setuptools :: The ~asv quickstart~ default.
+- Poetry :: Uses ~poetry-core~ as the build system.
+- PDM :: With the ~pdm-backend~ build system.
+- Hatch :: With ~hatchling~.
+
+Note that in all cases users can always modify the build command within their
+~asv~ configuration file.
+* Contributing
+Given the exploding number of build systems and varying configurations, this
+repository is necessarily a community effort. We value collaborative efforts
+and encourage the use of co-commits for joint contributions.
+** General Contributions and Fixes
+For general enhancements or fixes to existing branches:
+- Fork the repository, apply your changes, and submit a pull request.
+- For collaborative work, please include co-commits. Add ~Co-authored-by: name
+  <name@example.com>~ at the end of your commit message for each contributor,
+  ensuring the email is linked to their GitHub accounts, or use ~Co-authored-by:
+  username <username@users.noreply.github.com>~.
+** Adding a New Build System
+To introduce support for a new build system not currently represented in the
+repository:
+1. **Open an Issue**: Start by opening an issue to discuss the new build system,
+   providing details and any specific considerations.
+2. **Branch Creation**: Once the issue is approved, a new branch following the
+   naming convention ~<buildsystem>-build~ (e.g., ~poetry-build~, ~pdm-build~)
+   will be created off the default branch.
+3. **Submit a Pull Request**: Fork the repository, implement your changes in the
+   corresponding branch, and then submit a pull request targeting the newly
+   created branch for the build system.
+
+Remember to follow the collaborative work guidelines laid out in the [[General Contributions and Fixes][previous
+section]].
+
+* License
+MIT.
