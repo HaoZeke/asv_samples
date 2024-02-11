@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asv_samples"
+version = "0.1.0"
+description = "A set of asv samples"
+authors = [
+    {name = "Rohit Goswami", email = "rgoswami@ieee.org"},
+]
+license = {file = "LICENSE"}
+readme = "readme.md"
+
+[project.urls]
+repository = "https://github.com/HaoZeke/asv_samples"
+
+[tool.setuptools.packages.find]
+include = ["asv_samples*"]
