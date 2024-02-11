@@ -11,13 +11,15 @@
   The repository is structured with dedicated branches for each build system and
   feature demonstration.
 ** Representative Build Systems
-- Setuptools :: Still a reasonable default.
-- Poetry :: Uses ~poetry-core~ as the build system.
-- PDM :: With the ~pdm-backend~ build system.
-- Hatch :: With ~hatchling~.
+
+| *Branch*                     | *Configuration*                  |
+| ~main~                       | Source, not to be run            |
+| ~setup.py-build~             | Setuptools with ~setup.py~       |
+| ~pyproject-setuptools-build~ | Setuptools with ~pyproject.toml~ |
 
 Note that in all cases users can always modify the ~build_command~ variable
 within their ~asv~ configuration file.
+
 ** Advanced Benchmarking Demonstrations
 - Parametrization Techniques :: Showcases how to use decorators for parameterized
   benchmarks, under ~decorator-params~ branch.
@@ -36,12 +38,12 @@ For general enhancements or fixes to existing branches:
 ** Adding a New Build System
 To introduce support for a new build system not currently represented in the
 repository:
-1. **Open an Issue**: Start by opening an issue to discuss the new build system,
+1. *Open an Issue*: Start by opening an issue to discuss the new build system,
    providing details and any specific considerations.
-2. **Branch Creation**: Once the issue is approved, a new branch following the
+2. *Branch Creation*: Once the issue is approved, a new branch following the
    naming convention ~<buildsystem>-build~ (e.g., ~poetry-build~, ~pdm-build~)
    will be created off the default branch.
-3. **Submit a Pull Request**: Fork the repository, implement your changes in the
+3. *Submit a Pull Request*: Fork the repository, implement your changes in the
    corresponding branch, and then submit a pull request targeting the newly
    created branch for the build system.
 

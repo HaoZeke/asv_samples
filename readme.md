@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [About](#org187e7ac)
-    1.  [Representative Build Systems](#org5db63c9)
-    2.  [Advanced Benchmarking Demonstrations](#org75b7943)
-2.  [Contributing](#org5e65f4f)
-    1.  [General Contributions and Fixes](#org4afa6a7)
-    2.  [Adding a New Build System](#orgcbae17a)
-    3.  [Documentation](#orgfef8845)
-        1.  [Readme](#org7e12a06)
-3.  [License](#org462f9f6)
-    1.  [Logo](#org3aa817c)
+1.  [About](#orgc45fe12)
+    1.  [Representative Build Systems](#orgc27e1ca)
+    2.  [Advanced Benchmarking Demonstrations](#org4580441)
+2.  [Contributing](#org0e3af78)
+    1.  [General Contributions and Fixes](#orga841ba1)
+    2.  [Adding a New Build System](#org6f5b5a2)
+    3.  [Documentation](#org91d798e)
+        1.  [Readme](#orgfd15688)
+3.  [License](#org58819ed)
+    1.  [Logo](#orgb9abe78)
 
 
-<a id="org187e7ac"></a>
+<a id="orgc45fe12"></a>
 
 # About
 
@@ -29,20 +29,49 @@ The repository is structured with dedicated branches for each build system and
 feature demonstration.
 
 
-<a id="org5db63c9"></a>
+<a id="orgc27e1ca"></a>
 
 ## Representative Build Systems
 
--   **Setuptools:** Still a reasonable default.
--   **Poetry:** Uses `poetry-core` as the build system.
--   **PDM:** With the `pdm-backend` build system.
--   **Hatch:** With `hatchling`.
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Branch</b></td>
+<td class="org-left"><b>Configuration</b></td>
+</tr>
+
+
+<tr>
+<td class="org-left"><code>main</code></td>
+<td class="org-left">Source, not to be run</td>
+</tr>
+
+
+<tr>
+<td class="org-left"><code>setup.py-build</code></td>
+<td class="org-left">Setuptools with <code>setup.py</code></td>
+</tr>
+
+
+<tr>
+<td class="org-left"><code>pyproject-setuptools-build</code></td>
+<td class="org-left">Setuptools with <code>pyproject.toml</code></td>
+</tr>
+</tbody>
+</table>
 
 Note that in all cases users can always modify the `build_command` variable
 within their `asv` configuration file.
 
 
-<a id="org75b7943"></a>
+<a id="org4580441"></a>
 
 ## Advanced Benchmarking Demonstrations
 
@@ -53,7 +82,7 @@ within their `asv` configuration file.
     -   Currently `memray-plugin` showcases the use of `asv_bench_memray`
 
 
-<a id="org5e65f4f"></a>
+<a id="org0e3af78"></a>
 
 # Contributing
 
@@ -62,7 +91,7 @@ repository is necessarily a community effort. We value collaborative efforts
 and encourage the use of co-commits for joint contributions.
 
 
-<a id="org4afa6a7"></a>
+<a id="orga841ba1"></a>
 
 ## General Contributions and Fixes
 
@@ -73,32 +102,32 @@ For general enhancements or fixes to existing branches:
     ensuring the email is linked to their GitHub accounts, or use `Co-authored-by: username <username@users.noreply.github.com>`.
 
 
-<a id="orgcbae17a"></a>
+<a id="org6f5b5a2"></a>
 
 ## Adding a New Build System
 
 To introduce support for a new build system not currently represented in the
 repository:
 
-1.  ****Open an Issue****: Start by opening an issue to discuss the new build system,
+1.  **Open an Issue**: Start by opening an issue to discuss the new build system,
     providing details and any specific considerations.
-2.  ****Branch Creation****: Once the issue is approved, a new branch following the
+2.  **Branch Creation**: Once the issue is approved, a new branch following the
     naming convention `<buildsystem>-build` (e.g., `poetry-build`, `pdm-build`)
     will be created off the default branch.
-3.  ****Submit a Pull Request****: Fork the repository, implement your changes in the
+3.  **Submit a Pull Request**: Fork the repository, implement your changes in the
     corresponding branch, and then submit a pull request targeting the newly
     created branch for the build system.
 
 Remember to follow the collaborative work guidelines laid out in the [previous
-section](#org4afa6a7).
+section](#orga841ba1).
 
 
-<a id="orgfef8845"></a>
+<a id="org91d798e"></a>
 
 ## Documentation
 
 
-<a id="org7e12a06"></a>
+<a id="orgfd15688"></a>
 
 ### Readme
 
@@ -107,14 +136,14 @@ The `readme` can be constructed via:
     ./scripts/org_to_md.sh readme_src.org readme.md
 
 
-<a id="org462f9f6"></a>
+<a id="org58819ed"></a>
 
 # License
 
 MIT.
 
 
-<a id="org3aa817c"></a>
+<a id="orgb9abe78"></a>
 
 ## Logo
 
