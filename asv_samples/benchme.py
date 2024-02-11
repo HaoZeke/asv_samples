@@ -1,8 +1,10 @@
 try:
     import numpy as np
+
     NUMPY_AVAILABLE = True
 except ImportError:
     NUMPY_AVAILABLE = False
+
 
 def add_arr(list1, list2):
     """
