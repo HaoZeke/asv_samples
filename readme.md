@@ -1,19 +1,19 @@
 
 # Table of Contents
 
-1.  [About](#orgc45fe12)
-    1.  [Representative Build Systems](#orgc27e1ca)
-    2.  [Advanced Benchmarking Demonstrations](#org4580441)
-2.  [Contributing](#org0e3af78)
-    1.  [General Contributions and Fixes](#orga841ba1)
-    2.  [Adding a New Build System](#org6f5b5a2)
-    3.  [Documentation](#org91d798e)
-        1.  [Readme](#orgfd15688)
-3.  [License](#org58819ed)
-    1.  [Logo](#orgb9abe78)
+1.  [About](#orge360d49)
+    1.  [Representative Build Systems](#org1a69497)
+    2.  [Advanced Benchmarking Demonstrations](#org5f76d35)
+2.  [Contributing](#org69422d7)
+    1.  [General Contributions and Fixes](#orgdfa26d0)
+    2.  [Adding a New Build System](#orgf508e92)
+    3.  [Documentation](#org0f638ed)
+        1.  [Readme](#org41ba9e7)
+3.  [License](#org4093b43)
+    1.  [Logo](#org3c861f6)
 
 
-<a id="orgc45fe12"></a>
+<a id="orge360d49"></a>
 
 # About
 
@@ -29,7 +29,7 @@ The repository is structured with dedicated branches for each build system and
 feature demonstration.
 
 
-<a id="orgc27e1ca"></a>
+<a id="org1a69497"></a>
 
 ## Representative Build Systems
 
@@ -40,29 +40,35 @@ feature demonstration.
 <col  class="org-left" />
 
 <col  class="org-left" />
+
+<col  class="org-left" />
 </colgroup>
 <tbody>
 <tr>
 <td class="org-left"><b>Branch</b></td>
 <td class="org-left"><b>Configuration</b></td>
+<td class="org-left"><b>CI Status</b></td>
 </tr>
 
 
 <tr>
 <td class="org-left"><code>main</code></td>
 <td class="org-left">Source, not to be run</td>
+<td class="org-left">N/A</td>
 </tr>
 
 
 <tr>
 <td class="org-left"><code>setup.py-build</code></td>
 <td class="org-left">Setuptools with <code>setup.py</code></td>
+<td class="org-left"><a href="https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=setup.py-build">Status</a></td>
 </tr>
 
 
 <tr>
 <td class="org-left"><code>pyproject-setuptools-build</code></td>
 <td class="org-left">Setuptools with <code>pyproject.toml</code></td>
+<td class="org-left"><a href="https://github.com/HaoZeke/asv_samples/actions/workflows/build_test.yml/badge.svg?branch=pyproject-setuptools-build">Status</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,7 +77,7 @@ Note that in all cases users can always modify the `build_command` variable
 within their `asv` configuration file.
 
 
-<a id="org4580441"></a>
+<a id="org5f76d35"></a>
 
 ## Advanced Benchmarking Demonstrations
 
@@ -82,7 +88,7 @@ within their `asv` configuration file.
     -   Currently `memray-plugin` showcases the use of `asv_bench_memray`
 
 
-<a id="org0e3af78"></a>
+<a id="org69422d7"></a>
 
 # Contributing
 
@@ -91,7 +97,7 @@ repository is necessarily a community effort. We value collaborative efforts
 and encourage the use of co-commits for joint contributions.
 
 
-<a id="orga841ba1"></a>
+<a id="orgdfa26d0"></a>
 
 ## General Contributions and Fixes
 
@@ -102,7 +108,7 @@ For general enhancements or fixes to existing branches:
     ensuring the email is linked to their GitHub accounts, or use `Co-authored-by: username <username@users.noreply.github.com>`.
 
 
-<a id="org6f5b5a2"></a>
+<a id="orgf508e92"></a>
 
 ## Adding a New Build System
 
@@ -119,15 +125,15 @@ repository:
     created branch for the build system.
 
 Remember to follow the collaborative work guidelines laid out in the [previous
-section](#orga841ba1).
+section](#orgdfa26d0).
 
 
-<a id="org91d798e"></a>
+<a id="org0f638ed"></a>
 
 ## Documentation
 
 
-<a id="orgfd15688"></a>
+<a id="org41ba9e7"></a>
 
 ### Readme
 
@@ -136,14 +142,14 @@ The `readme` can be constructed via:
     ./scripts/org_to_md.sh readme_src.org readme.md
 
 
-<a id="org58819ed"></a>
+<a id="org4093b43"></a>
 
 # License
 
 MIT.
 
 
-<a id="orgb9abe78"></a>
+<a id="org3c861f6"></a>
 
 ## Logo
 
