@@ -1,15 +1,10 @@
 name: Build and Test
-on:
-  push:
-    branches-ignore:
-      - main  # Ignore push events to main branch
-  pull_request:
-    branches-ignore:
-      - main
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    if: ${{ !(github.ref == 'refs/heads/main') }}
     strategy:
       matrix:
         python-version: ["3.9"]
