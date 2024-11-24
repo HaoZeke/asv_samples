@@ -12,6 +12,27 @@ and ASV's extensible features on performance metrics. The repository is
 structured with dedicated branches for each build system and feature
 demonstration.
 
+## Usage
+
+Prepare an environment for `asv`:
+
+``` bash
+git clone https://github.com/airspeed-velocity/asv_samples/
+cd asv_samples
+micromamba create -p $(pwd)/.tmp  -c conda-forge python pip "libmambapy<2.0" conda-build
+micromamba activate -p $(pwd)/.tmp
+pip install asv
+```
+
+Checkout any of the branches, prepare them using the `gen_asv_conf.py`
+script, and run `asv`:
+
+``` bash
+git checkout memray-plugin
+python scripts/gen_asv_conf.py asv.conf.base.json
+asv run
+```
+
 ## Representative Build Systems
 
 +CAPTION: Where not specified, `pyproject.toml` is coupled with `hatch`
